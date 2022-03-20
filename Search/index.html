@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Search</title>
+</head>
+
+<body>
+    <div class="search-box">
+        <input class="search-txt" type="search" placeholder="Type to search">
+        <a class="search-btn" href="#">
+            <i class="material-icons">search</i>
+        </a>
+    </div>
+
+    <script>
+        $('.search-box').mouseenter(function () {
+            $('.search-txt').addClass('show');
+        });
+
+        $('.search-btn').click(function () {
+            $('.search-txt').removeClass('show');
+        });
+    </script>
+</body>
+
+</html>

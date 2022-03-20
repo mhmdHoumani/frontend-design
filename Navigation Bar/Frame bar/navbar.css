@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f0025;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.sidebar ul li a {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    color: #618c8d;
+    line-height: 80px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(95, 0, 95);
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    font-size: larger;
+    color: #3f6e6e;
+    border-bottom: 4px solid rgb(95, 0, 95);
+}

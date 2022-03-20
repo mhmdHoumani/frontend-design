@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="header.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h4 class="title">Welcome</h4>
+    <nav>
+        <div class="app-box">
+            <a href="#" class="app-btn" title="apps">
+                <i class="material-icons app-icon">apps</i>
+            </a>
+            <!--
+            <div class="app-content">
+                <ul>
+                    <li>English</li>
+                    <li>French</li>
+                    <li>Italy</li>
+                    <li>Germany</li>
+                    <li>Spain</li>
+                    <li>عربي</li>
+                    <li>فارسي</li>
+                </ul>
+            </div>
+            -->
+        </div>
+        <div class="search-box">
+            <input class="search-txt" type="search" placeholder="Type to search">
+            <a class="search-btn" href="#" title="search">
+                <i class="material-icons search-icon">search</i>
+            </a>
+        </div>
+        <div class="lang-box">
+            <a href="#" class="lang-btn" title="language">
+                <i class="material-icons lang-icon">language</i>
+            </a>
+        </div>
+        <div class="qr-box">
+            <a href="#" class="qr-btn" title="qr Code">
+                <i class="material-icons qr-icon">qr_code</i>
+            </a>
+        </div>
+    </nav>
+    <script>
+        $('.search-box').mouseenter(function () {
+            $('.search-txt').addClass('show');
+        });
+
+        $('.search-btn').click(function () {
+            $('.search-txt').removeClass('show');
+        });
+    </script>
+</body>
+
+</html>

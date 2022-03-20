@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="btn">
+        <i class="material-icons">menu</i>
+    </div>
+    <nav class="sidebar">
+        <div class="text">Side Menu</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#" class="feat-btn">
+                    Features
+                    <i class="material-icons first">arrow_drop_down</i>
+                </a>
+                <ul class="feat-show">
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Elements</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="ser-btn">
+                    Services
+                    <i class="material-icons second">arrow_drop_down</i>
+                </a>
+                <ul class="ser-show">
+                    <li><a href="#">App Design</a></li>
+                    <li><a href="#">Web Design</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Shortcuts</a></li>
+            <li><a href="#">Feedbacks</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log out</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        $('.btn').click(function () {
+            $(this).toggleClass('click');
+            $('.sidebar').toggleClass('show');
+        });
+        $('.feat-btn').click(function () {
+            $('nav ul .feat-show').toggleClass('show');
+            $('nav ul .first').toggleClass('rotate');
+        });
+        $('.ser-btn').click(function () {
+            $('nav ul .ser-show').toggleClass('show1');
+            $('nav ul .second').toggleClass('rotate');
+        });
+        $('nav ul li').click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+            $(this).siblings().children().removeClass('show show1');
+            $(this).siblings().children().children().removeClass('rotate');
+        });
+    </script>
+</body>
+
+</html>

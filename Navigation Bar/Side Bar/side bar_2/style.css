@@ -1,0 +1,138 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+	position: absolute;
+	top: 15px;
+	left: 45px;
+	height: 35px;
+	width: 40px;
+	text-align: center;
+	background: #1b1b1b;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: left 0.3s ease;
+}
+
+.btn.click {
+	left: 260px;
+}
+
+.btn i {
+	color: white;
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.sidebar {
+	position: fixed;
+	width: 250px;
+	height: 100vh;
+	left: -250px;
+	background: #1b1b1b;
+	transition: left 0.3s ease;
+}
+
+.sidebar.show {
+	left: 0px;
+}
+
+.sidebar .text {
+	color: white;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 65px;
+	text-align: center;
+	background: #272727;
+	letter-spacing: 3px;
+	font-style: oblique;
+	font-family: cursive;
+}
+
+nav ul {
+	background: #1b1b1b;
+	height: 100%;
+	width: 100%;
+}
+
+nav ul li {
+	line-height: 60px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav ul li:last-child {
+	border-bottom-color: rgba(255, 255, 255, 0.05);
+}
+
+nav ul li a {
+	position: relative;
+	color: #b6b6b6;
+	font-size: 18px;
+	padding-left: 40px;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	border-left: 3px solid transparent;
+	transition: all 0.3s ease;
+}
+
+nav ul li.active a {
+	color: cyan;
+	padding-left: 50px;
+	background: #272727;
+	border-left-color: cyan;
+}
+
+nav ul li a:hover {
+	color: cyan !important;
+	padding-left: 50px !important;
+}
+
+nav ul li ul {
+	position: static;
+	display: none;
+}
+
+nav ul .feat-show.show {
+	display: block;
+}
+
+nav ul .ser-show.show1 {
+	display: block;
+}
+
+nav ul li ul li {
+	line-height: 42px;
+	border-bottom: none;
+}
+
+nav ul li.active ul li a {
+	color: #9e9e9e;
+	padding-left: 70px;
+	background: #272727;
+	border-left-color: transparent;
+}
+
+nav ul ul li a:hover {
+	color: cyan !important;
+	padding-left: 80px !important;
+	background: #3b3b3b !important;
+}
+
+nav ul li a i {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	transition: transform 0.3s ease;
+}
+
+nav ul li a i.rotate {
+	transform: translateY(-50%) rotate(-180deg);
+}

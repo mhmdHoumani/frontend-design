@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome</title>
+</head>
+
+<body>
+    <div class="profile-box">
+        <ul>
+            <li>
+                <i class="material-icons profile">account_box</i>
+                <div class="profile-info">
+                    <div class="profile-content">Profile</div>
+                    <div class="profile-content">Change Password</div>
+                    <div class="profile-content">Logout</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        $('.profile').click(function () {
+            $('.profile-info').toggleClass('active');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	width: 37.3%;
+	margin: auto;
+	overflow: hidden;
+	border: 5px solid black;
+	position: relative;
+}
+
+.slide{
+	display: flex;
+	width: 100%;
+	height: auto;
+}
+
+#prevBtn{
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	left: 5%;
+	font-size: 30px;
+	color: rgba(0, 0, 0, 0.8);
+	cursor: pointer;
+}
+
+#nextBtn{
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	right: 5%;
+	font-size: 30px;
+	color: rgb(0, 0, 0, 0.8);
+	cursor: pointer;
+}
