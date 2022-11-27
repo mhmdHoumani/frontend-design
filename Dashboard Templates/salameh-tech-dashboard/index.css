@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+/* ********* */
+/* VARIABLES */
+/* ********* */
+
+:root {
+  --primary-color: #dc2f2f;
+  --secondary-color: #363636;
+  --white-color: #ede3e3;
+  --blur-white-color: #ede3e3af;
+  --green-color: #179617;
+  --blue-color: #3737a7;
+  --blur-color: #000000aa;
+  --sidebar-color: #000000cc;
+  --primary-transition: 0.3s ease-in-out;
+  --secondary-transition: 0.15s ease-in-out;
+  --third-transition: 0.1s ease-in-out;
+  --animation-transition: 0.5s ease-in-out infinite;
+  --card-transition: 0.6s ease-in-out;
+}
+
+body {
+  background-color: var(--white-color);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blur-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--secondary-color);
+}
+
+/* *********************** */
+/* ANNOUNCEMENTS CONTAINER */
+/* *********************** */
+
+.announcement-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* ************************************ */
+/* ADD & DELETE BUTTON IN THE DASHBOARD */
+/* ************************************ */
+
+.add-delete-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 10rem;
+}
+
+.deleted-element-btn,
+.add-element-btn {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: larger;
+  border-radius: 10px;
+}
+
+.deleted-element-btn:hover {
+  color: var(--primary-color);
+}
+
+.add-element-btn:hover {
+  color: var(--blue-color);
+}
+
+/* ********************* */
+/* EDIT DELETE CONTAINER */
+/* ********************* */
+
+.edit-delete-container {
+  width: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  width: 40px;
+  transition: var(--primary-transition);
+}
+
+@keyframes shakeIcon {
+  0% {
+    transform: rotate(-15deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+  animation: shakeIcon var(--animation-transition);
+}
+
+/* *************** */
+/* ADMIN DASHBOARD */
+/* *************** */
+
+.admin-records {
+  cursor: default;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: larger;
+  margin: 0rem 10rem;
+  padding: 1rem 5rem;
+  transition: var(--third-transition);
+}
+
+.admin-records:hover {
+  background-color: var(--secondary-color) !important;
+  color: var(--white-color);
+  text-decoration-line: underline;
+}
