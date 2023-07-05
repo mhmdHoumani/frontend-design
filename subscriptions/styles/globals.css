@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  src: url("/assets/BrainStorm AI- Images-Vectors -Icons-Logo/Font/Inter-VariableFont_slnt,wght.ttf")
+    format("ttf");
+}
+
+:root {
+  --primaryBlue: #090979;
+  --primaryPink: #ff00ca;
+  --secondaryYellow: #ffd704;
+  --secondaryGray: #e5d6fe;
+  --black: #1c1430;
+  --white: #fdf6ff;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  list-style-type: initial;
+  list-style-position: inside;
+}
+#line-text-line:before,
+#line-text-line:after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 50%;
+  background: #b5b5b5;
+  vertical-align: middle;
+  position: relative;
+}
+
+#line-text-line:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+#line-text-line:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.form-field {
+  border: 1px solid #b5b5b5;
+  border-radius: 12px;
+  padding: 0.8rem 0;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.bs-button {
+  @apply cursor-pointer select-none rounded-[29px] bg-darkBlue text-[14px] text-white-primary;
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+/* ******************** */
+/* SUBSCRIPTION SECTION */
+/* ******************** */
+.subscription-input-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background: none;
+  cursor: pointer;
+}
+
+.linear-gradient-color {
+  background: linear-gradient(to right, var(--primaryPink), var(--primaryBlue));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
